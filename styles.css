@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    /* background-color: #ACC8E5; */
+    background-color: #0C1618;
+}
+
+h1{
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    /* background-color: rgba(255, 255, 255, 0.432); */
+    background-color: #BFC0C0;
+    padding: 50px;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    border-radius: 10px;
+}
+
+section.players{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+section.players h3{
+    display: flex;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #111;
+}
+
+img{
+    width: 80px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: -70px;
+}
+
+button{
+    padding: 5px 40px;
+    margin-top: 20px;
+    font-size: 15px;
+    border: 2px solid #112A46;
+    background-color: #112A46;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}

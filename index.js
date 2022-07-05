@@ -11,7 +11,7 @@ elementChoice.forEach(elementChoice => elementChoice.addEventListener('click',(e
     // récupération de l'ID du boutton cliqué
     playerChoice = e.target.id
  
-    // On ajoute l'image
+    // On ajoute l'image pour le joueur
     playerResult.innerHTML = `<img src="img/${playerChoice}.png">`
     computerRandomChoice()
     verification()
@@ -20,7 +20,6 @@ elementChoice.forEach(elementChoice => elementChoice.addEventListener('click',(e
 
 
 const computerRandomChoice = () => {
-    let iaChoice
     const min = 1
     const max = 3
     const randomNumber = Math.floor(Math.random() * max) + min
@@ -36,36 +35,20 @@ const computerRandomChoice = () => {
     }
 
     computerResult.innerHTML = `<img src="img/${iaChoice}.png">`
+    return iaChoice
 }
 
-const verification = () => {    
+const verification = () => {   
+    console.log(playerChoice, iaChoice)
     if(playerChoice === iaChoice){
         resultat = "Egalité !"
-    }
-
-    // Défaite
-    if(playerChoice === "pierre" && iaChoice === "feuille"){
-        resultat = "L'IA a gagné"
-    }
-    if(playerChoice === "feuille" && iaChoice === "ciseaux"){
-        resultat = "L'IA a gagné"
-    }
-    if(playerChoice === "ciseaux" && iaChoice === "pierre"){
-        resultat = "L'IA a gagné"
+    }else if((playerChoice === "pierre" && iaChoice === "feuille") || 
+            (playerChoice === "feuille" && iaChoice === "ciseaux") || 
+            (playerChoice === "ciseaux" && iaChoice === "pierre")){
+                resultat = "l'IA a gagné"
     }else{
         resultat = "Vous avez gagné !"
     }
-
-    // Victoire
-    // if(playerChoice === "pierre" && iaChoice === "ciseaux"){
-    //     resultat = "Vous avez gagné !"
-    // }
-    // if(playerChoice === "ciseaux" && iaChoice === "feuille"){
-    //     resultat = "Vous avez gagné !"
-    // }
-    // if(playerChoice === "feuille" && iaChoice === "pierre"){
-    //     resultat = "Vous avez gagné !"
-    // }
 
     result.innerHTML = resultat
 }

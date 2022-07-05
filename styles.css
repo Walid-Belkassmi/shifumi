@@ -47,7 +47,6 @@ section.card{
     flex-direction: column;
     align-items: center;
     width: 400px;
-    /* background-color: #ff771e6b; */
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     padding: 50px;
     -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
@@ -93,3 +92,29 @@ button{
     cursor: pointer;
     border-radius: 5px;
 }
+
+div.part{
+    display: flex;
+}
+
+/* Aside : leaderbord */
+aside{
+    margin-left: 90px;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 50px;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    border-radius: 10px;
+}
+
+aside h2{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+aside h3{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+

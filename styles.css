@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 /* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/* font-family: 'Monoton', cursive; */
 
 body{
     display: flex;
@@ -7,13 +9,37 @@ body{
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    /* background-color: #ACC8E5; */
-    background-color: #0C1618;
+    /* background: rgb(131,58,180); */
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 
 h1{
-    margin-bottom: 50px;
-    font-size: 30px;
+    font-size: 65px;
+    font-family: 'Monoton', cursive;
+    color: white;
+    position: absolute;
+    top: 25px;
+}
+
+div.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+h5{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+div.score-display span{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 section.card{
@@ -21,12 +47,13 @@ section.card{
     flex-direction: column;
     align-items: center;
     width: 400px;
-    /* background-color: rgba(255, 255, 255, 0.432); */
-    background-color: #BFC0C0;
+    /* background-color: #ff771e6b; */
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     padding: 50px;
     -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     border-radius: 10px;
+    position: relative;
 }
 
 section.players{
@@ -45,10 +72,15 @@ section.players h3{
 }
 
 img{
-    width: 80px;
+    width: 100px;
     margin-top: 50px;
     margin-bottom: 20px;
     margin-left: -70px;
+}
+
+section.card h3{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 button{

@@ -51,6 +51,7 @@ const computerRandomChoice = () => {
     return iaChoice
 }
 
+
 const verification = () => {   
     if(playerChoice === iaChoice){
         resultat = "Egalité !"

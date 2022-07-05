@@ -56,10 +56,25 @@ const verification = () => {
         resultat = "Vous avez gagné !"
         playerPoints += 1
     }
+    
+    iaScore.innerHTML = iaPoints
+    playerScore.innerHTML = playerPoints
+
+    if(playerPoints === 5){
+        playerPoints = 0
+        iaPoints = 0
+        iaScore.innerHTML = iaPoints
+        playerScore.innerHTML = playerPoints
+    }
+
+    if(iaPoints === 5){
+        playerPoints = 0
+        iaPoints = 0
+        iaScore.innerHTML = iaPoints
+        playerScore.innerHTML = playerPoints
+    }
 
 
     result.innerHTML = resultat
-    iaScore.innerHTML = iaPoints
-    playerScore.innerHTML = playerPoints
     
 }
